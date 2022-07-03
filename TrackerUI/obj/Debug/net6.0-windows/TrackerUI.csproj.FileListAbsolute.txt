@@ -15,3 +15,7 @@ D:\Khedma\TournamentTracker\TrackerUI\obj\Debug\net6.0-windows\refint\TrackerUI.
 D:\Khedma\TournamentTracker\TrackerUI\obj\Debug\net6.0-windows\TrackerUI.pdb
 D:\Khedma\TournamentTracker\TrackerUI\obj\Debug\net6.0-windows\TrackerUI.genruntimeconfig.cache
 D:\Khedma\TournamentTracker\TrackerUI\obj\Debug\net6.0-windows\ref\TrackerUI.dll
+D:\Khedma\TournamentTracker\TrackerUI\obj\Debug\net6.0-windows\TrackerUI.CreatePrizeForm.resources
+D:\Khedma\TournamentTracker\TrackerUI\obj\Debug\net6.0-windows\TrackerUI.CreateTeamForm.resources
+D:\Khedma\TournamentTracker\TrackerUI\obj\Debug\net6.0-windows\TrackerUI.CreateTournamentForm.resources
+D:\Khedma\TournamentTracker\TrackerUI\obj\Debug\net6.0-windows\TrackerUI.TournamentDashbordForm.resources
