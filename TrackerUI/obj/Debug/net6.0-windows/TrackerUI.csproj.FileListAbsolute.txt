@@ -1,0 +1,17 @@
+D:\Khedma\TournamentTracker\TrackerUI\bin\Debug\net6.0-windows\TrackerUI.exe
+D:\Khedma\TournamentTracker\TrackerUI\bin\Debug\net6.0-windows\TrackerUI.deps.json
+D:\Khedma\TournamentTracker\TrackerUI\bin\Debug\net6.0-windows\TrackerUI.runtimeconfig.json
+D:\Khedma\TournamentTracker\TrackerUI\bin\Debug\net6.0-windows\TrackerUI.dll
+D:\Khedma\TournamentTracker\TrackerUI\bin\Debug\net6.0-windows\TrackerUI.pdb
+D:\Khedma\TournamentTracker\TrackerUI\obj\Debug\net6.0-windows\TrackerUI.csproj.AssemblyReference.cache
+D:\Khedma\TournamentTracker\TrackerUI\obj\Debug\net6.0-windows\TrackerUI.TournamentViewerForm.resources
+D:\Khedma\TournamentTracker\TrackerUI\obj\Debug\net6.0-windows\TrackerUI.csproj.GenerateResource.cache
+D:\Khedma\TournamentTracker\TrackerUI\obj\Debug\net6.0-windows\TrackerUI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Khedma\TournamentTracker\TrackerUI\obj\Debug\net6.0-windows\TrackerUI.AssemblyInfoInputs.cache
+D:\Khedma\TournamentTracker\TrackerUI\obj\Debug\net6.0-windows\TrackerUI.AssemblyInfo.cs
+D:\Khedma\TournamentTracker\TrackerUI\obj\Debug\net6.0-windows\TrackerUI.csproj.CoreCompileInputs.cache
+D:\Khedma\TournamentTracker\TrackerUI\obj\Debug\net6.0-windows\TrackerUI.dll
+D:\Khedma\TournamentTracker\TrackerUI\obj\Debug\net6.0-windows\refint\TrackerUI.dll
+D:\Khedma\TournamentTracker\TrackerUI\obj\Debug\net6.0-windows\TrackerUI.pdb
+D:\Khedma\TournamentTracker\TrackerUI\obj\Debug\net6.0-windows\TrackerUI.genruntimeconfig.cache
+D:\Khedma\TournamentTracker\TrackerUI\obj\Debug\net6.0-windows\ref\TrackerUI.dll
