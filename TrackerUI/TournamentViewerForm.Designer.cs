@@ -49,7 +49,7 @@
             this.headerLabel.AutoSize = true;
             this.headerLabel.Font = new System.Drawing.Font("Segoe UI Light", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.headerLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.headerLabel.Location = new System.Drawing.Point(28, 35);
+            this.headerLabel.Location = new System.Drawing.Point(12, 9);
             this.headerLabel.Name = "headerLabel";
             this.headerLabel.Size = new System.Drawing.Size(214, 50);
             this.headerLabel.TabIndex = 0;
@@ -60,7 +60,7 @@
             this.tournamentName.AutoSize = true;
             this.tournamentName.Font = new System.Drawing.Font("Segoe UI Light", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tournamentName.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.tournamentName.Location = new System.Drawing.Point(230, 35);
+            this.tournamentName.Location = new System.Drawing.Point(214, 9);
             this.tournamentName.Name = "tournamentName";
             this.tournamentName.Size = new System.Drawing.Size(150, 50);
             this.tournamentName.TabIndex = 1;
