@@ -31,7 +31,7 @@ namespace TrackerLibrary
     
         public static string CnnString(string name)
         {
-            string con = @"Server=.\DESKTOP-7N5GHPH;Database=Tournaments;Trusted_Connection=True";
+            string con = "Server=DESKTOP-7N5GHPH;Database=Tournaments;Trusted_Connection=True";
 
 
             return con;
