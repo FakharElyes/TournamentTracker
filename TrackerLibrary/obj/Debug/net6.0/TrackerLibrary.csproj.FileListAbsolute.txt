@@ -1,0 +1,12 @@
+D:\Khedma\TournamentTracker\TrackerLibrary\bin\Debug\net6.0\TrackerLibrary.deps.json
+D:\Khedma\TournamentTracker\TrackerLibrary\bin\Debug\net6.0\TrackerLibrary.dll
+D:\Khedma\TournamentTracker\TrackerLibrary\bin\Debug\net6.0\TrackerLibrary.pdb
+D:\Khedma\TournamentTracker\TrackerLibrary\obj\Debug\net6.0\TrackerLibrary.csproj.AssemblyReference.cache
+D:\Khedma\TournamentTracker\TrackerLibrary\obj\Debug\net6.0\TrackerLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\Khedma\TournamentTracker\TrackerLibrary\obj\Debug\net6.0\TrackerLibrary.AssemblyInfoInputs.cache
+D:\Khedma\TournamentTracker\TrackerLibrary\obj\Debug\net6.0\TrackerLibrary.AssemblyInfo.cs
+D:\Khedma\TournamentTracker\TrackerLibrary\obj\Debug\net6.0\TrackerLibrary.csproj.CoreCompileInputs.cache
+D:\Khedma\TournamentTracker\TrackerLibrary\obj\Debug\net6.0\TrackerLibrary.dll
+D:\Khedma\TournamentTracker\TrackerLibrary\obj\Debug\net6.0\refint\TrackerLibrary.dll
+D:\Khedma\TournamentTracker\TrackerLibrary\obj\Debug\net6.0\TrackerLibrary.pdb
+D:\Khedma\TournamentTracker\TrackerLibrary\obj\Debug\net6.0\ref\TrackerLibrary.dll

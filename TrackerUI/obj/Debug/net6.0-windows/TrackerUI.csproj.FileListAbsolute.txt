@@ -19,3 +19,6 @@ D:\Khedma\TournamentTracker\TrackerUI\obj\Debug\net6.0-windows\TrackerUI.CreateP
 D:\Khedma\TournamentTracker\TrackerUI\obj\Debug\net6.0-windows\TrackerUI.CreateTeamForm.resources
 D:\Khedma\TournamentTracker\TrackerUI\obj\Debug\net6.0-windows\TrackerUI.CreateTournamentForm.resources
 D:\Khedma\TournamentTracker\TrackerUI\obj\Debug\net6.0-windows\TrackerUI.TournamentDashbordForm.resources
+D:\Khedma\TournamentTracker\TrackerUI\bin\Debug\net6.0-windows\TrackerLibrary.dll
+D:\Khedma\TournamentTracker\TrackerUI\bin\Debug\net6.0-windows\TrackerLibrary.pdb
+D:\Khedma\TournamentTracker\TrackerUI\obj\Debug\net6.0-windows\TrackerUI.csproj.CopyComplete
