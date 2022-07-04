@@ -10,3 +10,4 @@ D:\Khedma\TournamentTracker\TrackerLibrary\obj\Debug\net6.0\TrackerLibrary.dll
 D:\Khedma\TournamentTracker\TrackerLibrary\obj\Debug\net6.0\refint\TrackerLibrary.dll
 D:\Khedma\TournamentTracker\TrackerLibrary\obj\Debug\net6.0\TrackerLibrary.pdb
 D:\Khedma\TournamentTracker\TrackerLibrary\obj\Debug\net6.0\ref\TrackerLibrary.dll
+D:\Khedma\TournamentTracker\TrackerLibrary\bin\Debug\net6.0\TrackerLibrary.dll.config
