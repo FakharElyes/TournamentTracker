@@ -1,3 +1,5 @@
+using System.Configuration;
+
 namespace TrackerUI
 {
     internal static class Program
@@ -17,6 +19,9 @@ namespace TrackerUI
 
             //Application.Run(new TournamentDashbordForm());
             Application.Run(new CreatePrizeForm());
+
         }
+
+
     }
 }

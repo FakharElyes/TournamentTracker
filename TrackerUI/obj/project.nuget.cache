@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "NJeG8xmr8VpM9XIgOwATYBi6cJxpfLYxIQaSKU5FwlV5aTTTbdVFgwBNMMJlIl3hYomZYsEAeFMRa9VAHSXdOg==",
+  "dgSpecHash": "jVzWASzTB8EsWfsYFyRyruoaQXIqmkvNWbsVIVt5KBasmIC+USIhKFkmdZf7CnMgfnx8gOJb2d8GGqZOZe47qw==",
   "success": true,
   "projectFilePath": "D:\\Khedma\\TournamentTracker\\TrackerUI\\TrackerUI.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\las19\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\las19\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\las19\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.0\\system.configuration.configurationmanager.6.0.0.nupkg.sha512",
+    "C:\\Users\\las19\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\las19\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
+    "C:\\Users\\las19\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
+    "C:\\Users\\las19\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
+    "C:\\Users\\las19\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
