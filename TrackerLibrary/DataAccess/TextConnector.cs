@@ -13,6 +13,7 @@ namespace TrackerLibrary.DataAccess
     {
         private const string PrizesFile = "PrizeModels.csv";
         private const string PersonsFile = "PersonModels.csv";
+        private const string TeamsFile = "TeamModels.csv";
 
         public PersonModel CreatePerson(PersonModel model)
         {
@@ -45,7 +46,12 @@ namespace TrackerLibrary.DataAccess
 
         public TeamModel CreateTeam(TeamModel model)
         {
-            throw new NotImplementedException();
+            List<TeamModel> teams = TeamsFile.FullFilePath().LoadFile().ConvertToTeeamModel(PersonsFile);
+            int CurrentId = teams.Count == 0 ? 1 : teams.OrderByDescending(x => x.Id).First().Id + 1;
+            model.Id = CurrentId;
+            teams.Add(model);
+            teams.SaveToTeamFile(TeamsFile);
+            return model;
         }
 
         public List<PersonModel> GetPerson_All()
