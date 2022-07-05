@@ -1,4 +1,5 @@
 using System.Configuration;
+using TrackerLibrary;
 
 namespace TrackerUI
 {
@@ -15,7 +16,7 @@ namespace TrackerUI
             ApplicationConfiguration.Initialize();
 
             // Initialize the database connections
-            TrackerLibrary.GlobalConfig.InitializeConnections(true,true);
+            TrackerLibrary.GlobalConfig.InitializeConnections(DatabaseType.Sql);
 
             //Application.Run(new TournamentDashbordForm());
             Application.Run(new CreatePrizeForm());
