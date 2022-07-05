@@ -28,7 +28,6 @@ namespace TrackerLibrary.DataAccess
 
         }
 
-        // TODO -   Wire up the CreatePrize for text files.
         public PrizeModel CreatePrize(PrizeModel model)
         {
             List<PrizeModel> prizes = PrizesFile.FullFilePath().LoadFile().ConvertToPrizeModel();
@@ -42,6 +41,11 @@ namespace TrackerLibrary.DataAccess
             prizes.SaveToPrizeFile(PrizesFile);
 
             return model;
+        }
+
+        public List<PersonModel> GetPerson_All()
+        {
+            return new List<PersonModel>();
         }
     }
 }

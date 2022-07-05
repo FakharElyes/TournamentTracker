@@ -14,9 +14,26 @@ namespace TrackerUI
 {
     public partial class CreateTeamForm : Form
     {
+        private List<PersonModel> avalibleTeamMembers = GlobalConfig.Connection.GetPerson_All();
+        private List<PersonModel> selectedTeamMembers = new List<PersonModel>();
+
+
         public CreateTeamForm()
         {
             InitializeComponent();
+            //CreateSampleData();
+            WireUpLists();
+        }
+
+
+        private void CreateSampleData()
+        {
+            avalibleTeamMembers.Add(new PersonModel { FirstName = "Time", LastName = "Corey" });
+            avalibleTeamMembers.Add(new PersonModel { FirstName = "Sue", LastName = "Storm" });
+
+            selectedTeamMembers.Add(new PersonModel { FirstName = "Jane", LastName = "Smith" });
+            selectedTeamMembers.Add(new PersonModel { FirstName = "Bill", LastName = "Jane" });
+
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -74,6 +91,17 @@ namespace TrackerUI
 
             return true;
         }
+
+        private void WireUpLists()
+        {
+            selectTeamMemberDropdown.DataSource = avalibleTeamMembers;
+            selectTeamMemberDropdown.DisplayMember = "FullName";
+
+            teamMembersListBox.DataSource = selectedTeamMembers;
+            teamMembersListBox.DisplayMember = "FullName";
+
+        }
+
 
     }
 }
