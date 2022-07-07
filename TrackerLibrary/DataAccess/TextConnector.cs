@@ -55,9 +55,20 @@ namespace TrackerLibrary.DataAccess
             return model;
         }
 
-        public TournamentModel CreateTournament(TournamentModel model)
+        public void CreateTournament(TournamentModel model)
         {
-            List<TournamentModel> tournaments = TournamentFile.FullFilePath().LoadFile().ConvertToTournamentModel();
+            List<TournamentModel> tournaments = TournamentFile
+                .FullFilePath()
+                .LoadFile()
+                .ConvertToTournamentModel(TeamsFile, PersonsFile, PrizesFile);
+
+            int CurrentId = tournaments.Count == 0 ? 1 : tournaments.OrderByDescending(x => x.Id).First().Id + 1;
+
+            model.Id = CurrentId;
+
+            tournaments.Add(model);
+
+            tournaments.SaveToTournamentsFile(TournamentFile);
         }
 
         public List<PersonModel> GetPerson_All()

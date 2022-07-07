@@ -151,9 +151,131 @@ namespace TrackerLibrary.DataAccess.TextHelpers
         }
 
 
-        public static List<TournamentModel> ConvertToTournamentModel (this List<string> lines)
+        public static List<TournamentModel> ConvertToTournamentModel (
+            this List<string> lines, 
+            string teamFileName, 
+            string personsFileName, 
+            string prizeFileName)
         {
-            var output = new List<TournamentModel>();
+            // id,TournamentName,EntryFree,(id|id|id - Entred Teams), (id|id|id - Prizes), (Rounds - id^id^id|id^id^id|id^id^id)
+            List<TournamentModel> output = new List<TournamentModel>();
+            List<TeamModel> teams = teamFileName.FullFilePath().LoadFile().ConvertToTeeamModel(personsFileName);
+            List<PrizeModel> prizes = teamFileName.FullFilePath().LoadFile().ConvertToPrizeModel();
+
+
+            foreach (string line in lines)
+            {
+                string[] cols = line.Split(',');
+
+                TournamentModel tm = new TournamentModel();
+                tm.Id = int.Parse(cols[0]);
+                tm.TournamentName = cols[1];
+                tm.EntryFee = decimal.Parse(cols[2]);
+
+                string[] teamIds = cols[3].Split('|');
+
+                foreach (string id in teamIds)
+                {
+                    tm.EnteredTeams.Add(teams.Where(x => x.Id == int.Parse(id)).First());
+                }
+
+                string[] prizeIds = cols[4].Split('|');
+
+                foreach (string id in prizeIds)
+                {
+                    tm.Prizes.Add(prizes.Where(x => x.Id == int.Parse(id)).First());
+                }
+
+                // TODO -   Capture rouns information
+
+                output.Add(tm);
+            }
+
+            return output;
+        }
+
+        private static string ConvertTeamListToString(List <TeamModel> teams)
+        {
+            string output = string.Empty;
+
+            if(teams.Count == 0) return output;
+
+            foreach (TeamModel t in teams)
+            {
+                output += $"{t.Id}|";
+            }
+
+            output = output.Substring(0, output.Length - 1);
+
+            return output;
+        }
+
+        private static string ConvertPrizeListToString(List<PrizeModel> prizes)
+        {
+            string output = string.Empty;
+
+            if (prizes.Count == 0) return output;
+
+            foreach (PrizeModel p in prizes)
+            {
+                output += $"{p.Id}|";
+            }
+
+            output = output.Substring(0, output.Length - 1);
+
+            return output;
+        }
+
+        private static string ConvertRoundListToString(List<List<MatchupModel>> rounds)
+        {
+            string output = string.Empty;
+
+            if (rounds.Count == 0) return output;
+
+            foreach (List<MatchupModel> r in rounds)
+            {
+                
+
+                output += $"{ConvertMatchupListtoString(r)}|";
+            }
+
+            output = output.Substring(0, output.Length - 1);
+
+            return output;
+        }
+
+        private static string ConvertMatchupListtoString (List<MatchupModel> matchups)
+        {
+            string output = string.Empty;
+
+            if (matchups.Count == 0) return output;
+
+            foreach (MatchupModel m in matchups)
+            {
+                output += $"{m.Id}^";
+            }
+
+            output = output.Substring(0, output.Length - 1);
+
+            return output;
+        }
+
+        public static void SaveToTournamentsFile(this List<TournamentModel> models, string fileName)
+        {
+            List<string> lines = new List<string>();
+
+            foreach (TournamentModel tm in models)
+            {
+                lines.Add($@"{tm.Id},
+                    {tm.TournamentName},
+                    {tm.EntryFee},
+                    {ConvertTeamListToString(tm.EnteredTeams)},
+                    {ConvertPrizeListToString(tm.Prizes)},
+                    {ConvertRoundListToString(tm.Rounds)}");
+            }
+
+            File.WriteAllLines(fileName.FullFilePath(), lines);
+
         }
 
     }
