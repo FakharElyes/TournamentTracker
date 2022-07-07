@@ -149,5 +149,12 @@ namespace TrackerLibrary.DataAccess.TextHelpers
 
             return output;
         }
+
+
+        public static List<TournamentModel> ConvertToTournamentModel (this List<string> lines)
+        {
+            var output = new List<TournamentModel>();
+        }
+
     }
 }
