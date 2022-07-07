@@ -16,13 +16,14 @@ namespace TrackerUI
     {
         private List<PersonModel> avalibleTeamMembers = GlobalConfig.Connection.GetPerson_All();
         private List<PersonModel> selectedTeamMembers = new List<PersonModel>();
+        private ITeamRequester caller;
 
-
-        public CreateTeamForm()
+        public CreateTeamForm(ITeamRequester caller)
         {
             InitializeComponent();
             //CreateSampleData();
             WireUpLists();
+            this.caller = caller;
         }
 
 
@@ -135,9 +136,10 @@ namespace TrackerUI
             t.TeamName = teamNameValue.Text;
             t.TeamMembers = selectedTeamMembers;
 
-            t = GlobalConfig.Connection.CreateTeam(t);
+            GlobalConfig.Connection.CreateTeam(t);
 
-            // TODO -   If I am not closing this form after creation, reset the from
+            this.caller.TeamComplete(t);
+            this.Close();
         }
     }
 }
