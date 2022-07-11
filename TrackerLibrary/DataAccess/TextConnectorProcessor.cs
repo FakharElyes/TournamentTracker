@@ -278,5 +278,76 @@ namespace TrackerLibrary.DataAccess.TextHelpers
 
         }
 
+        public static void SaveRoundsToFile(this TournamentModel model, string matchupFile,string matchupEntryFile )
+        {
+            // Loop through each Round
+            // Loop through each matchup
+            // Get the id for the new matchup and save the record
+            // Loop though each entry, get the id, and save it
+
+            foreach (List<MatchupModel> round in model.Rounds)
+            {
+                foreach (MatchupModel matchup in round)
+                {
+                    // Load all of the matchups from file
+                    // Get the top id and add one
+                    // Store the id
+                    // Save the matchup record
+                    matchup.SaveMatchupToFiles(matchupFile, matchupEntryFile);
+                }
+            }
+
+        }
+
+        public static void SaveMatchupToFiles(this MatchupModel matchup, string matchupFile, string matchupEntryFile)
+        {
+
+
+            foreach (MatchupEntryModel entry in matchup.Entries)
+            {
+                entry.SaveEntryToFile(matchupEntryFile);
+            }
+
+        }
+
+        public static void SaveEntryToFile(this MatchupEntryModel entry, string matchupEntryFile)
+        {
+
+        }
+
+        public static List<MatchupModel> ConvertToMatchupModel(this List<string> lines)
+        {
+            List<MatchupModel> output = new();
+
+            foreach (string line in lines)
+            {
+                string[] cols = line.Split(',');
+
+                MatchupModel p = new MatchupModel();
+                p.Id = int.Parse(cols[0]);
+                p.Entries = ConvertStringToMatchupEntryModels(cols[1]);
+                p.Winner = LookupTeamById(int.Parse(cols[2]));
+                p.MatchupRound = int.Parse(cols[3]);
+                output.Add(p);
+            }
+
+            return output;
+        }
+
+        private static List<MatchupEntryModel> ConvertStringToMatchupEntryModels(string input)
+        {
+            throw new NotImplementedException();
+        }
+
+        private static TeamModel LookupTeamById(int id)
+        {
+            List<TeamModel> teams = GlobalConfig.TeamsFile.FullFilePath().LoadFile().ConvertToTeeamModel(GlobalConfig.PersonsFile);
+
+            return teams.Where(x => x.Id == id).First();
+            throw new NotImplementedException();
+        }
+
+
+
     }
 }
