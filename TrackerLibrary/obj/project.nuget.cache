@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7WnABuAuiDNLK0xs5wJY7+1GEF7kAm9CdHJeVpGMrorKg+Y5UsWZT3MjIGVsH2LWGbfccrkWhNsVXC9n6fltfw==",
+  "dgSpecHash": "3mimSzP+rY/hN1E5tjk6fgfMQ7CN/x4wOLbaFoh9UhT69oqLOSNTmBEPbDv4opyan/xRKXDM9vyJ/9P7y+MmGQ==",
   "success": true,
-  "projectFilePath": "D:\\Khedma\\TournamentTracker\\TrackerLibrary\\TrackerLibrary.csproj",
+  "projectFilePath": "E:\\Khedma\\TournamentTracker\\TrackerLibrary\\TrackerLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\las19\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\las19\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
