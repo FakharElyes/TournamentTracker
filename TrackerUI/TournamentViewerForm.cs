@@ -198,8 +198,6 @@ namespace TrackerUI
 
                 LoadMatchups((int)roundDropDown.SelectedItem);
                 GlobalConfig.Connection.UpdateMatchup(m);
-
-
             }
         }
     }
